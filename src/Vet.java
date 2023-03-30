@@ -9,14 +9,13 @@ public class Vet
         this.name = name;
         client = new ArrayList<Animal>();
     }
-
     public void addClient(Animal x)
     {
         if(!client.contains(x)){
         client.add(x);
         System.out.println("Welcome to " + name + " office," + x.getName()+ "!");
         }
-        else
+        else{System.out.println(x.getName() + " is already a client of " + name);}
         {
 
         }
